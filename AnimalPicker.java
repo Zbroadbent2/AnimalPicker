@@ -18,22 +18,28 @@ public class AnimalPicker {
             }//else if (animal.equals("fish")){
             // printFish();
             //  break;
-         }// else {
-        //         System.out.println("Error, please enter a valid option.");
-        //     }
+        // }
+        else {
+                 System.out.println("Error, please enter a valid option.");
+             }
         }
-        //scanner.close();
-    //}
+        scanner.close();
+   }
     private static void printDog(){
         //ASCII art for dog
-        System.out.println("DOG ASCII ART HERE");
+        System.out.println("  __      _\r\n" + //
+                        "o'')}____//\r\n" + //
+                        " `_/      )\r\n" + //
+                        " (_(_/-(_/");
     }
     private static void printCat(){
         //ASCII art for cat
-        System.out.println("CAT ASCII ART HERE");
+        System.out.println(" /\\_/\\\r\n" + //
+                        "( o.o )\r\n" + //
+                        " > ^ <");
     }
     // private static void printFish(){
     //     //ASCII art for fish
     //     System.out.println("FISH ASCII ART HERE");
-    }
-//}
+    //}
+}
