@@ -18,12 +18,13 @@ public class AnimalPicker {
             }//else if (animal.equals("fish")){
             // printFish();
             //  break;
-         }// else {
-        //         System.out.println("Error, please enter a valid option.");
-        //     }
+        // }
+        else {
+                 System.out.println("Error, please enter a valid option.");
+             }
         }
-        //scanner.close();
-    //}
+        scanner.close();
+   }
     private static void printDog(){
         //ASCII art for dog
         System.out.println("DOG ASCII ART HERE");
@@ -35,5 +36,5 @@ public class AnimalPicker {
     // private static void printFish(){
     //     //ASCII art for fish
     //     System.out.println("FISH ASCII ART HERE");
-    }
-//}
+    //}
+}
