@@ -6,7 +6,7 @@ public class AnimalPicker {
         String animal;
 
         while (true){ //While loop continously makes the user enter an animal until a valid option is entered
-            System.out.println("Which animal would you like to see? A 'dog' or 'cat' or 'fish' or 'spiderman':");
+            System.out.println("Which animal would you like to see? A 'dog' or 'cat' or 'fish' or 'spiderman' or 'dog':");
             animal = scanner.nextLine().trim().toLowerCase();
 
             if (animal.equals("dog")){
@@ -21,7 +21,11 @@ public class AnimalPicker {
             }else if (animal.equals("spiderman")){
                 printSpiderman();
                 break;
-            }else{
+            
+            }else if (animal.equals("bear")){
+
+            }
+            else{
                 System.out.println("Error, please enter a valid option.");
              }
         }
@@ -51,5 +55,8 @@ public class AnimalPicker {
     public static void printSpiderman(){
         //ASCII art for spiderman
         System.out.println("                   ,,,, \n             ,;) .\';;;;\',\n ;;,,_,-.-.,;;\'_,|I\\;;;/),,_\n  `\';;/:|:);{ ;;;|| \\;/ /;;;\\__\n      L;/-\';/ \\;;\\\',/;\\/;;;.\') \\\n      .:`\'\'` - \\;;\'.__/;;;/  . _\'-._ \n    .\'/   \\     \\;;;;;;/.\'_7:.  \'). \\_\n  .\'\'/     | \'._ );}{;//.\'    \'-:  \'.,L\n.\'. /       \\  ( |;;;/_/         \\._./;\\   _,\n . /        |\\ ( /;;/_/             \';;;\\,;;_,\n. /         )__(/;;/_/                (;;\'\'\'\'\'\n /        _;:\':;;;;:\';-._             );\n/        /   \\  `\'`   --.\'-._         \\/\n       .\'     \'.  ,\'         \'-,\n      /    /   r--,..__       \'.\\\n    .\'    \'  .\'        \'--._     ]\n    (     :.(;>        _ .\' \'- ;/\n    |      /:;(    ,_.\';(   __.\'\n     \'- -\'\"|;:/    (;;;;-\'--\'\n           |;/      ;;(\n           \'\'      /;;|\n                   \\;;|\n                    \\/");
+    }
+    public static void printBear(){
+        System.out.println(" __         __\n/  \\.-\"\"\"-./  \\\n\\    -   -    /\n |   o   o   |\n \\  .-\'\'\'-.  /\n  \'-\\__Y__/-\'\n     `---`");
     }
 }
